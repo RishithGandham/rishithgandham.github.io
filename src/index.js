@@ -13,21 +13,21 @@ import Projects from './pages/projects/projects.page';
 import About from './pages/about/about.page';
 
 //routing
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <HashRouter>
         <App class="app" />
         <Routes>
             <Route path="/about" element={<About/>} />
             <Route path="/projects" element={<Projects/>} />
             <Route path="/skills" element={<Skills/>} />
         </Routes>
-    </Router>
+    </HashRouter>
     
   </React.StrictMode>,
   document.getElementById('root')
